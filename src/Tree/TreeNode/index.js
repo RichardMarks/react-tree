@@ -103,7 +103,7 @@ const TreeNode = DropTarget(DNDType, treeNodeDropSpec, treeNodeDropCollect)(
               {
                 this.props.node.children.map((child, childIndex) => {
                   return (
-                    <TreeNode key={childIndex} node={child} nodeIndex={childIndex} />
+                    <TreeNode key={childIndex} node={child} nodeIndex={childIndex} onNodeDrop={this.props.onNodeDrop} />
                   )
                 })
               }

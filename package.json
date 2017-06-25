@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "immutability-helper": "^2.2.2",
+    "lodash": "^4.17.4",
     "react-dnd-html5-backend": "^2.4.1",
     "react-scripts": "1.0.7",
     "react-sortable-tree": "^0.1.19"

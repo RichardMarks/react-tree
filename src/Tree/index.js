@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
+import cloneDeep from 'lodash/cloneDeep'
 
 import TreeNode from './TreeNode'
+
+import {
+  addTreeNode,
+  findTreeNode,
+  updateTree
+} from './Api'
 
 import './index.css'
 
@@ -25,6 +32,14 @@ class Tree extends Component {
     window.console.log('node that was dropped', nodeDropped, nodeDropped.props.node.data)
     window.console.log('node that was dropped on', nodeDroppedOn, nodeDroppedOn.props.node.data)
     window.console.groupEnd()
+
+    const tree = cloneDeep(this.state)
+
+    const parent = findTreeNode(tree, nodeDroppedOn.props.node)
+
+    parent.children.push(cloneDeep(nodeDropped.props.node))
+
+    this.setState(tree, () => console.log('dude'))
   }
 
   renderNode (node, nodeIndex) {

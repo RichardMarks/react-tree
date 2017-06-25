@@ -1,0 +1,10 @@
+
+.external-container__container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.external-container__container .tree-node__container {
+  margin-bottom: 10px;
+}

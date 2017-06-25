@@ -1,0 +1,15 @@
+.tree-node__container {
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tree-node__data {
+  padding: 10px;
+  background: thistle;
+  color: darkorchid;
+}
+
+.tree-node__children-container {
+  margin-left: 20px;
+}

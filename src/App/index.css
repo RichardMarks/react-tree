@@ -1,0 +1,21 @@
+.app__container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.app__external-container {
+  border-left: 4px solid black;
+  margin-left: 4px;
+  padding: 10px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__tree-container {
+  flex-grow: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
